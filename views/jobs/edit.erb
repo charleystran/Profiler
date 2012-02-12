@@ -1,0 +1,19 @@
+<div id="new_job_form">
+  <h1>New Job</h1>
+  <form action="/jobs/<%= @job.id %>/edit" method="post">
+    <label for="job_employer">Employer</label>
+    <input id="job_employer" type="text" size="30" name="job[employer]" value="<%= @job.employer %>">
+    <br />
+    <label for="job_started">Started</label>
+    <input id="job_started" type="text" name="job[started]" value="<%= @job.started %>">
+    <label for="job_ended">Ended</label>
+    <input id="job_ended" type="text" name="job[ended]" value="<%= @job.ended %>">
+    <br />
+    <label for="job_description">Job description</label>
+    <br>
+    <textarea id="job_description" rows="15" name="job[description]" cols="50"><%= @job.description %></textarea>
+    <br />
+    <input type="submit" value="Save" name="commit">
+    
+  </form>
+</div>

@@ -1,0 +1,68 @@
+body {
+  background: #3e5e83;
+}
+header {
+  color: #fff;
+}
+h1 {
+  color: #fff;
+  text-shadow: 1px 1px 1px #000;
+}
+nav {
+}
+nav ul {
+  margin: 0;
+  padding: 0;
+}
+nav ul li {
+  list-style: none;
+  height: 30px;
+  display: inline-block;
+  padding: 7px 20px 0 20px;
+  margin: 0 20px;
+  border: 1px solid #999;
+}
+nav ul li:hover {
+  background: #5783B5;
+}
+nav ul li a {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  text-shadow: 1px 1px 1px #000;
+}
+#content {
+  color: #fff;
+
+}
+#contact_form {
+  width: 50%;
+  margin: auto;
+}
+#contact_form label {
+  display: inline-block;
+  width: 50px;
+  padding: 5px 0;
+}
+footer {
+  margin-top: 20px;
+  text-align: center;
+  color: #fff;
+  text-shadow: 1px 1px 1px #000;
+}
+#jobs_list {
+  width: 50%;
+}
+#jobs_list ul {
+}
+#jobs_list ul li {
+  list-style: none;
+  border-bottom: 1px solid #999;
+}
+#bio img {
+  padding: 0 10px 10px 10px;
+  float: left;
+}
+.clear {
+  clear: both;
+}

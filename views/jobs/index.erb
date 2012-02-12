@@ -1,0 +1,26 @@
+<div id="jobs_list">
+  <h1>Work History</h1>
+  <ul>
+    <% @jobs.each do |job| %>
+      <li>
+      <h3><%= job.employer %></h3>
+      <p class="job_dates">
+        Started: <%= job.started.strftime("%m/%d/%Y") unless job.started.nil? %>
+        to
+        <% if job.ended.nil? %>
+          Present
+        <% else %>
+          <%= job.ended.strftime("%m/%d/%Y") %>
+        <% end %>
+      </p>
+      <h3>Description</h3>
+      <p class="job_description">
+        <%= job.description %>
+      </p>
+      <p class="links">
+        <a href="/jobs/<%= job.id %>">View Job</a>
+      </p>
+      </li>
+    <% end %>
+  </ul>
+</div>

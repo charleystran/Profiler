@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Barney Stinson</title>
+    <link type="text/css" rel="stylesheet" media="screen" href="/stylesheets/application.css">
+  </head>
+  <body>
+    <header>
+      <h1>Barney Stinson - Legendary</h1>
+      <nav>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/jobs">Jobs</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div id="content">
+      <%= yield %>
+    </div>
+    <footer>Copyright The Barnicle <%= Time.now.year%></footer>
+  </body>
+</html>

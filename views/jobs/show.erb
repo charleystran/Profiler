@@ -1,0 +1,16 @@
+
+<h3>
+  <%= @job.employer %>
+</h3>
+<p>
+  Started: <%= @job.started %>
+  to
+  <%= @job.ended %>
+</p>
+<h3>Description</h3>
+<p>
+  <%= @job.description %>
+</p>
+
+<a href="/jobs/<%=@job.id%>/edit">Edit This Job</a>
+<a  href="/jobs/<%=@job.id%>/destroy">Delete Job</a>
